@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>Let's see how much space you have.</p>
+    <h2>Total space: <%= size.toFixed(0) %> GB</h2>
+    <% redClass = warn ? 'red' : '' %>
+      <h2 class=<%= redClass %>>Free space: <%= free.toFixed(0) %></h2>
+    <h2>Space used: <%= used.toFixed(0) %></h2>
+  </body>
+</html>
